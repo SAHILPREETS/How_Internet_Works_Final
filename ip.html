@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<head>
+<style>
+body {
+  background-image: url('images/bg.jpg');
+  background-repeat:repeat-x;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+p{ text-align:justify;}
+</style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Logo" style="width:50px;"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+	 <li class="nav-item"><a class="nav-link" href="domain.html">Domain</a></li>
+    <li class="nav-item"><a class="nav-link" href="icann.html">ICANN</a></li>
+	<li class="nav-item"><a class="nav-link" href="ip.html">IP Address</a></li>
+	<li class="nav-item"><a class="nav-link" href="dns.html">DNS</a></li>
+	<li class="nav-item"><a class="nav-link" href="http.html">HTTP(s)</a></li>
+	<li class="nav-item"><a class="nav-link" href="w3c.html">W3C</a></li>
+	<li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+<p style="height:50px;">&nbsp;</p>
+<br>
+       
+	   <div class="container p-3 my-3 border">
+	   <h1>IP (Internet Protocol)</h1><hr>
+		   <div class="row" border>
+		   
+ 			 <div class="col-sm-12" >
+			 <img src="images/domain.jpg"  alt="img" class="img-fluid"  style="float:right; padding:10px;" />
+			 		<p> IP stands for Internet Protocol. It help in connecting one computer to other devices on the network all over the world. All the devices connected to internet have a unique IP address. There are two types of IPs IPv4 & IPv6. IPv4 is the older version which has an space of over 4 billion IP addresses. However, the new IPv6 version can provide up to trillions of IP addresses to fulfil the need of all internet users and devices. The IPv4 version used to configure IP addresses in numerical value (numbers) which may conflict with other IP addresses. That’s why IPv6 adopted the hexadecimal method to provide unique IP addresses to billions of users in the world.</p>
+
+<h3>Private IP Address</h3><hr>
+					 <p> A private IP address is the address of your device connected on the home or business network. If you have a few different devices connected to one ISP (Internet Service Provider), then all your devices will have a unique private IP address. This IP address cannot be accessed from devices outside your home or business network.
+For example: 192.168.1.1
+Private IP addresses are not unique because there is limited number of devices on your network.
+</p>
+
+<h3>Public IP Address</h3><hr>
+					<p>Your public IP address is the main IP address to which your home or business network is connected. This IP address connects you to the world, and it’s unique for all users.
+Static and Dynamic IP Addresses
+All private and public IP addresses can be either static or dynamic. IP addresses that you configure manually and fix them to the network of your device are called static IP addresses. Static IP addresses cannot change automatically.
+</p>
+<h3>Packet, routers, and reliability</h3><hr>
+<img src="images/ip_routing_example.jpg"  alt="img" class="img-fluid" width="500" height="600" style="float:right; padding:10px;" />
+<p> IP routing is a process of transferring data from one network to another as IP packets. By default, hosts of different networks cannot communicate with each other. If two hosts located in different IP networks want to communicate with each other, they use IP routing.
+
+Routers provide IP routing. A router is a specialized device that connects different IP networks. For example. Suppose two IP hosts; 10.10.10.10/8 and 20.20.20.20/8 want to communicate. Since they both belong to the different IP networks, they need a router to communicate.The complete IP routing process relies on two types of protocols; routed protocols and routing protocols. Before we understand how the IP routing works, let’s understand the differences between both types of protocols : Routing protocols and Routed or Routable protocols.
+
+<h5> Routing protocols:</h5><hr> 
+
+<img src="images/routingprotocols.jpg"  alt="img" class="img-fluid" width="200" height="200" style="float:right; padding:10px;" />
+						
+				<p> Routers use a routing protocol for the following purposes.To figure out all available paths of the network. A router stores these paths in a table known as the routing table.To select the best and fastest path to get a destination host. When a router receives an IP packet, the router checks its routing table and compares all available paths to get the destination network of the received IP packet and selects the fastest path from all available paths. RIP, IGRP, EIGRP, and OSPF are examples of routing protocols.                     </p>
+
+<h5> Routable protocols:</h5><hr> 
+<p>A routed protocol is used to encapsulate the data that is exchanged between the source host and the destination host. In IP routing, the IP protocol is used as the routed protocol.
+
+By using the IP protocol, a source host packs data pieces and adds the source address and the destination address on each data piece. A data piece with both addresses (source and destination) is known as the IP packet.
+
+Any router that works on a path that connects the source host to the destination host uses both (source and destination) addresses to find out where the packet came from and where it will go</p>
+  				</div>
+			</div>
+		  </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
